@@ -1,5 +1,3 @@
-Certainly! Here's a sample README file for your Python script and Docker setup:
-
 # Machine Learning Model Dockerization README
 
 This repository contains a simple example of containerizing a Python-based machine learning model using Docker. The machine learning script (`main.py`) reads a dataset, performs data preprocessing, and trains a Linear Regression model. Additionally, it provides a Dockerfile to create a Docker image for your machine learning project.
@@ -10,10 +8,9 @@ The `main.py` script does the following:
 
 1. Imports necessary libraries such as `pandas`, `numpy`, `matplotlib`, `sklearn.preprocessing`, `sklearn.model_selection`, `sklearn.linear_model`, and `sklearn.compose`.
 2. Reads a CSV dataset named '50_Startups.csv' using `pandas`.
-3. Performs data preprocessing by encoding categorical features using `OneHotEncoder`.
-4. Splits the data into training and testing sets using `train_test_split`.
-5. Trains a Linear Regression model.
-6. Makes predictions on the testing data and prints the predicted and actual values.
+3. Splits the data into training and testing sets using `train_test_split`.
+4. Trains a Linear Regression model.
+5. Makes predictions on the testing data and prints the predicted and actual values.
 
 To run this script, make sure you have the required dependencies installed. You can use the provided `requirements.txt` to set up the environment.
 
