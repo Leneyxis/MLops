@@ -42,6 +42,31 @@ To build and run the Docker container, follow these steps:
 
 Make sure to customize the Docker image name and port mapping as needed for your specific use case.
 
+***
+## Deploying Docker Image to Google Cloud
+> Requirements: 
+- Google Cloud Account 
+- Google Cloud CLI
+
+Create a new tag for deploying your docker file to Google Cloud:
+```bash
+docker tag docker-ml-model gcr.io/mlops-402118/docker-ml-model
+```
+Once done initiate Google Cloud using:
+
+```bash
+gcloud init
+gcloud auth login
+```
+Set up the necessary permission for your porject on Google Cloud and then push the Docker:
+
+```bash
+docker push gcr.io/mlops-402118/docker-ml-model 
+```
+Once done create a new Kubernetes Instance on Google Cloud Console selecting the DockerImage you've deployed. In my instance, once deployed and an Instance is created, I got the following URL:
+
+> https://mlop-ehhja2edgq-uc.a.run.app
+
 ## Contact Information
 
 If you have any questions or need further assistance, please feel free to reach out to the project maintainers.
